@@ -8,7 +8,7 @@ class MascotaSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ClientesSerializer(serializers.ModelSerializer):
-    dueño=serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+    dueño=serializers.StringRelatedField(many=True)
     class Meta:
         model = Cliente
         fields = ['idcli','nombre','apellido','direccion','telefono','correo','foto','dueño']

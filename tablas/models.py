@@ -27,11 +27,10 @@ class Mascota(models.Model):
     tipo_animal = models.CharField(max_length=50, blank=True, null=True)
     foto =models.ImageField(upload_to="mascotas",blank=True)
 
-    class Meta:
-        ordering=['idmas']
+    
 
     def __str__(self):
-        return self.idmas,self.nombre
+        return self.raza
 
 
 class Paseador(models.Model):
