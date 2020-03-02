@@ -5,7 +5,7 @@ from rest_framework import routers
 routers=routers.DefaultRouter()
 routers.register('serviciostablas',views.ClienteList)
 routers.register('serviciostablas',views.MascotaList)
-
+routers.register('serviciostablas',views.PaseadorList)
 
 urlpatterns = [
     path('',include(routers.urls))
