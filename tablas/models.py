@@ -12,7 +12,6 @@ class Paseador(models.Model):
     
     def __str__(self):
         return self.nombre
-# Create your models here.
 
 class Cliente(models.Model):
     idcli = models.AutoField(primary_key=True)
@@ -26,7 +25,6 @@ class Cliente(models.Model):
     def __str__(self):
         return self.nombre
 
-   
 class Mascota(models.Model):
     SEXO =(('Macho','Macho'),('Hembra','Hembra'))
     TMASCOTA =(('Perro','Perro'),('Gato','Gato'))
@@ -43,10 +41,3 @@ class Mascota(models.Model):
 
     def __str__(self):
         return self.nombre
-
-
-
-    # fecha_ingreso = models.DateTimeField(blank=True, null=True)
-    # telefono = models.IntegerField(blank=True, null=True)
-    # correo = models.CharField(unique=True, max_length=200, blank=True, null=True)
-    # dni = models.IntegerField(blank=True, null=True)

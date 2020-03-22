@@ -3,12 +3,11 @@ from .import views
 from rest_framework import routers
 
 routers=routers.DefaultRouter()
-routers.register('serviciostablas',views.ClienteList)
-routers.register('serviciostablas',views.MascotaList)
-routers.register('serviciostablas',views.PaseadorList)
+routers.register('Cliente',views.ClienteList)
+routers.register('Mascota',views.MascotaList)
+routers.register('Paseador',views.PaseadorList)
 
 urlpatterns = [
     path('',include(routers.urls))
-    #path('', views.list_all_servicios_json,name='list_all_servicios'),
 ]
 

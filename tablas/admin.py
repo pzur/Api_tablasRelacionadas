@@ -5,4 +5,3 @@ admin.site.register(Cliente)
 admin.site.register(Mascota)
 admin.site.register(Paseador)
 
-# Register your models here.
